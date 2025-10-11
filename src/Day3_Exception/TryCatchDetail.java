@@ -1,0 +1,17 @@
+package Day3_Exception;
+
+public class TryCatchDetail {
+    public static void main(String[] args) {
+        try {
+            String str = "jack";
+            int a = Integer.parseInt(str);
+            System.out.println("数字:"+a);
+        } catch (NumberFormatException e) {
+            System.out.println("异常信息："+e.getMessage());
+        } finally {
+            System.out.println("finally执行");
+        }
+
+        System.out.println("继续执行");
+    }
+}
